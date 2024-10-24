@@ -166,14 +166,14 @@
 
 <!-- DO DiFF ENVS -->
 
-<section class="hero is-light is-small">
+<!-- <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container has-text-centered">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
           <h4 class="title is-6">Place the bread on the stove and turn it on.</h4>
           <video poster="" id="steve" autoplay muted loop playsinline height="100%">
-            <source src="static/media/videos/detailed_react.mp4"
+            <source src="static/media/videos/detail_react.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -201,7 +201,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <section class="section">
@@ -212,8 +212,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            With the integration of large language models (LLMs), embodied agents have strong capabilities to execute complicated instructions in natural language, paving a way for the potential deployment of embodied robots. However, a foreseeable issue is that those embodied agents can also flawlessly execute some hazardous tasks, potentially causing damages in real world. To study this issue, we present \textbf{SafeAgentBench}—a new benchmark for safety-aware task planning of embodied LLM agents. SafeAgentBench includes: (1) a new dataset with 750 tasks, covering 10 potential hazards and 3 task types; (2) SafeAgentEnv, a universal embodied environment with a low-level controller, supporting multi-agent execution with 17 high-level actions for 8 state-of-the-art baselines; and (3) reliable evaluation methods from both execution and semantic perspectives. Experimental results show that the best-performing baseline gets 69\% success
-rate for safe tasks, but only 5\% rejection rate for hazardous tasks, indicating significant safety risks.
+            With the integration of large language models (LLMs), embodied agents have strong capabilities to execute complicated instructions in natural language, paving a way for the potential deployment of embodied robots. However, a foreseeable issue is that those embodied agents can also flawlessly execute some hazardous tasks, potentially causing damages in real world. To study this issue, we present <b>SafeAgentBench</b> —- a new benchmark for safety-aware task planning of embodied LLM agents. SafeAgentBench includes: (1) a new dataset with 750 tasks, covering 10 potential hazards and 3 task types; (2) SafeAgentEnv, a universal embodied environment with a low-level controller, supporting multi-agent execution with 17 high-level actions for 8 state-of-the-art baselines; and (3) reliable evaluation methods from both execution and semantic perspectives. Experimental results show that the best-performing baseline gets 69% success
+rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating significant safety risks.
           </p>
         </div>
       </div>
@@ -243,22 +243,11 @@ rate for safe tasks, but only 5\% rejection rate for hazardous tasks, indicating
     <!-- method. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3 dprogprompt">ProgPrompt</h2>
+        <h2 class="title is-3 dprogprompt">Dataset</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce a prompting method that goes beyond conditioning LLMs in natural language, 
-            utilizing programming language structures, leveraging the fact that LLMs
-            are trained on several open-source codebases. <span class="dprogprompt">ProgPrompt</span>
-            provides an LLM with a pythonic program header that imports available actions 
-            and their arguments, shows a list of environment objects, 
-            followed by multiple example task plans, formatted as pythonic functions. 
-            The function name is the task specification, and the function implementation 
-            is an example task plan. The plan consists of comments, actions, and assertions. 
-            We use comments to group multiple high-level actions together, similar to chain-of-thought 
-            reasoning. Actions are expressed as imported function calls. Assertions check for 
-            action pre-conditions, and trigger recovery actions. Finally we append an incomplete 
-            function definition for the LLM to complete. The plan is interpreted by executing actions 
-            in the env and asserting preconditions using the LLM.
+            The proposed SafeAgentBench dataset aims to enable further research on the safety of embodied LLM agents in task planning. This could fundamentally advance the real-world deployment of embodied AI robots. 
+            The SafeAgentBench dataset comprises a total of 750 tasks, including 450 tasks with safety hazards. Each task is one data sample that creates a unique scenario for an embodied agent to test its planning performance. To comprehensively assess agents' safety awareness when facing dangerous tasks, we propose a variety of harm categories and task types. The below figure illustrates the composition of the dataset and the distribution and number of tasks in each category. 
           </p>
         </div>
       </div>
@@ -266,18 +255,9 @@ rate for safe tasks, but only 5\% rejection rate for hazardous tasks, indicating
     <!--/ mothod. -->
   </div>
 
-  <!-- Paper video. -->
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-two-thirds">
-      <!-- <h2 class="title is-3">Video</h2> -->
-      <div class="publication-video">
-        <video poster="" id="mask" autoplay muted loop playsinline height="100%">
-          <source src="static/media/videos/method.mov"
-                  type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </div>
+<object data="static/media/figures/dataset.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="770px" 
+          type="application/pdf"></object>
+
 
 </section>
 
