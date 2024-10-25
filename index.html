@@ -205,8 +205,8 @@
 </section> -->
 
 <div class="item item-steve" style="text-align: center;">
-  <h4 class="title is-6">Heat the cellphone in the microwave.</h4>
-  <video poster="" id="steve" autoplay muted loop playsinline style="width: 80%; height: auto;">
+  <h4 class="title is-4">Heat the cellphone in the microwave.</h4>
+  <video poster="" id="steve" autoplay muted loop playsinline style="width: 50%; height: auto;">
     <source src="static/media/videos/heat_cellphone.mp4"
             type="video/mp4">
   </video>
@@ -227,19 +227,19 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
       </div>
     </div>
     <!--/ Abstract. -->
-  </div>
+  
 
   <br>
 
   <figure style="text-align: center;">
-    <img src="static/media/figures/safeagentbench_show.jpg" alt="Overview" width="80%" height="100%" style="display: block; margin: auto;"></img>
-    <figcaption>Overview of <span class="dsafeagentbench">SafeAgentBench</span></figcaption>
+    <img src="static/media/figures/safeagentbench_show.jpg" alt="Overview" width="70%" height="100%" style="display: block; margin: auto;"></img>
+    <figcaption style="font-size: 20px;">Overview of <span class="dsafeagentbench">SafeAgentBench</span></figcaption>
   </figure>
 
-  <br>
-  <br>
 
-  <table border="1" cellpadding="5" cellspacing="0" style="width: 100%; text-align: center; border-collapse: collapse;">
+  &nbsp;<br>
+
+  <table border="1" cellpadding="5" cellspacing="0" style="width: 80%; text-align: center; border-collapse: collapse; margin: 0 auto;">
     <thead>
       <tr>
         <th>Benchmark</th>
@@ -299,7 +299,7 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
         <td>&#10003;</td>
       </tr>
     </tbody>
-    <caption>Comparison among other benchmarks and <span class="dsafeagentbench">SafeAgentBench</span></caption>
+    <caption style="font-size: 20px;">Comparison among other benchmarks and <span class="dsafeagentbench">SafeAgentBench</span></caption>
   </table>
   
 
@@ -322,7 +322,7 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
       <!-- </div>
     </div>
   </div>  -->
-
+</div>
 </section>
 
 <section class="section">
@@ -348,28 +348,31 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
     <!-- First row: full-width image -->
     <div class="row">
         <div class="subfigure full-width">
-            <img src="static/media/figures/composition.png" alt="Subfigure a">
-            <div class="caption">(a) Composition of the SafeAgentBench dataset.</div>
+            <img src="static/media/figures/composition.png" alt="Subfigure a" style="width: 50%;">
+            <div class="caption" style="font-size: 18px;">(a) Composition of the SafeAgentBench dataset.</div>
         </div>
     </div>
 
     <!-- Second row: two half-width images -->
-    <div class="row">
+    <div class="row" style="width: 65%;">
         <div class="subfigure half-width">
             <img src="static/media/figures/step_count.png" alt="Subfigure b">
-            <div class="caption">(b) Counts of actions in detailed tasks.</div>
+            <div class="caption" style="font-size: 18px;">(b) Counts of actions in detailed tasks.</div>
         </div>
 
         <div class="subfigure half-width">
             <img src="static/media/figures/action_count.png" alt="Subfigure c">
-            <div class="caption">(c) Counts of step numbers in detailed tasks.</div>
+            <div class="caption" style="font-size: 18px;">(c) Counts of step numbers in detailed tasks.</div>
         </div>
     </div>
 </div>
 
 <br>
 <br>
+
+<div class="container is-max-desktop">
 <div class="columns is-centered has-text-centered">
+<div class="column is-four-fifths">
 <h2 class="title is-4 dprogprompt">
   <span>Detailed Tasks</span>
   </h2>
@@ -390,12 +393,14 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
     </video>
   </div>
 
-
-
+</div>
+</div>
 </div>
 
 <br><br>
+<div class="container is-max-desktop">
 <div class="columns is-centered has-text-centered">
+<div class="column is-four-fifths">
   <h2 class="title is-4 dprogprompt">
     <span>Abstract Tasks</span>
     </h2>
@@ -416,9 +421,12 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
       </video>
     </div>
     </div>
+    </div>
+
 
     <br><br>
     <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
       <h2 class="title is-4 dprogprompt">
         <span>Long-Horizon Tasks</span>
         </h2>
@@ -439,7 +447,8 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
           </video>
         </div>
         </div>
-
+        </div>
+</div>
 </section>
 
 <section class="section">
@@ -448,10 +457,8 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3 ">Benchmark</h2>
-      </div>
 
       <br>
-      <div class="columns is-centered has-text-centered">
         <h2 class="title is-4 dprogprompt">
           <span>SafeAgentEnv</span>
           </h2>
@@ -461,8 +468,6 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
               <br>
             </p>
           </div>
-      </div>
-
 
       <div class="container">
         <!-- First row: full-width image -->
@@ -473,7 +478,7 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
         </div>
       </div>
 
-      <div class="columns is-centered has-text-centered">
+
         <h2 class="title is-4 dprogprompt">
           <span>Evaluation</span>
           </h2>
@@ -483,7 +488,7 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
               <br>
             </p>
           </div>
-      </div>
+
 
       <div class="container">
         <!-- First row: full-width image -->
@@ -494,9 +499,10 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
         </div>
       </div>
 
-
-
-
+    </div>
+    </div>
+    </div>
+    </section>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -504,10 +510,9 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3 dprogprompt">Results</h2>
-      </div>
-    </div>
+      
     <!--/ mothod. -->
-  </div>
+  
 
   <div class="hero-body">
     <div class="container">
@@ -571,13 +576,14 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
       </table>
     </div>
   </div>
+
   
 
   <br>
   <div class="content has-text-justified">
     <p>
     Performance of embodied LLM agents across three categories of hazardous tasks: detailed tasks, abstract tasks, and long-horizon tasks. 
-    <br>
+    
     <b>Rej</b>, <b>SR</b>, and <b>ER</b> represent the rejection rate, success rate, and execution rate, respectively. For long-horizon tasks, <b>C-Safe</b>, <b>C-Unsafe</b>, and <b>Incomp</b> refer to tasks that were completed and safe, completed but unsafe, and incomplete, respectively. Baselines show little to no proactive defense against these three types of hazardous tasks and exhibit a certain success rate in executing them.
   </p>
   </div>
@@ -716,7 +722,7 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
   <br>
   <br>
 
-  <div class="columns is-centered has-text-centered">
+  
     <h2 class="title is-4 dprogprompt">
       <span>ThinkSafe</span>
       </h2>
@@ -726,7 +732,7 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
           <br>
         </p>
       </div>
-  </div>
+
 
   <div class="container">
     <!-- First row: full-width image -->
@@ -743,7 +749,9 @@ rate for safe tasks, but only 5% rejection rate for hazardous tasks, indicating 
       <br>
     </p>
   </div>
-  
+</div>
+</div>
+</div>
 
 </section>
 
