@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subfigure Layout</title>
+    <!-- <style>
+        .container {
+            display: flex;
+            flex-direction: column; /* Stack the images vertically */
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .row {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .subfigure {
+            text-align: center;
+        }
+
+        /* The first image takes up the full row */
+        .full-width {
+            width: 100%;
+        }
+
+        /* The second and third images share the second row equally */
+        .half-width {
+            width: 45%; /* Adjust width to fit side by side with some space */
+        }
+
+        img {
+            width: 100%; /* Ensure the image takes up full width of the container */
+            height: auto;
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 5px;
+            font-style: italic;
+        }
+    </style> -->
+    <link rel="stylesheet" href="static/css/subgragh.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- First row: full-width image -->
+    <div class="row">
+        <div class="subfigure full-width">
+            <img src="static/media/figures/composition.png" alt="Subfigure a">
+            <div class="caption">(a) Composition of the SafeAgentBench dataset.</div>
+        </div>
+    </div>
+
+    <!-- Second row: two half-width images -->
+    <div class="row">
+        <div class="subfigure half-width">
+            <img src="static/media/figures/step_count.png" alt="Subfigure b">
+            <div class="caption">(b) Counts of actions in detailed tasks.</div>
+        </div>
+
+        <div class="subfigure half-width">
+            <img src="static/media/figures/action_count.png" alt="Subfigure c">
+            <div class="caption">(c) Counts of step numbers in detailed tasks.</div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+<section class="section">
+    <div class="container is-max-widescreen">
+  
+      <div class="rows">
+  
+  
+      <!-- Animation. -->
+      <div class="rows is-centered has-text-centered">
+        <div class="row is-full-width">
+          <h2 class="title is-3"><span>Results</span></h2>
+          <!-- <br>  -->
+            
+            <div class="container is-fullhd">
+              <div class="hero-body">
+                <div class="container">
+                  <h2 class="subtitle has-text-centered">
+                    <span>Real Robot Demo</span> <br>
+                    Task: sort fruits on the plate and bottle in the box
+                    </h2>
+                  <div class="columns is-vcentered  is-centered">
+                    <video id="teaser" autoplay muted loop height="100%">
+                      <source src="static/media/videos/real-robot.mp4"
+                              type="video/mp4">
+                    </video>
+                    <!-- </br> -->
+                  </div>
+                  <!-- <br> -->
+  
+                </div>
+              </div>
+  
+  
+              <div class="hero-body">
+                <div class="container">
+                  <h2 class="subtitle has-text-centered">
+                    <span>VirtualHome Demo </span> <br>
+                    Task: microwave salmon
+                    <!-- is an end-to-end behavior-cloning agent that can learn <br><b>a single language-conditioned policy</b> for 18 RLBench tasks with <b>249 unique task variations</b> -->
+                    </h2>
+                  <div class="columns is-vcentered  is-centered">
+                    
+                    <video id="teaser" autoplay muted loop height="100%">
+                      <source src="static/media/videos/VH_demo.mp4"
+                              type="video/mp4">
+                    </video>
+                    <!-- </br> -->
+                  </div>
+                  <!-- <br> -->
+  
+                </div>
+              </div>
+            </div>
+  
+            <div class="hero-body">
+  
+              <div class="container">
+                <h2 class="subtitle has-text-centered">
+                  <span>VirtualHome Results</span>
+                  <!-- is an end-to-end behavior-cloning agent that can learn <br><b>a single language-conditioned policy</b> for 18 RLBench tasks with <b>249 unique task variations</b> -->
+                  </h2>
+                <table class="GeneratedTable padding-table-columns">
+                  <thead>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>bring coffeepot and cupcake to the coffee table</th>
+                      <th>brush teeth</th>
+                      <th>eat chips on the sofa</th>
+                    </tr>
+                    <tr>
+                      <td>          
+                        <video poster="" id="steve" autoplay="" muted="" loop="" playsinline="" height="100%" style="border-radius: 10px; ">
+                          <source src="static/media/videos/task_unseen_bring coffeepot and cupcake to the coffee table.mov" type="video/mp4">
+                      </video>
+                    </td>
+                      <td>          
+                        <video poster="" id="steve" autoplay="" muted="" loop="" playsinline="" height="100%" style="border-radius: 10px; ">
+                          <source src="static/media/videos/task_unseen_brush teeth.mov" type="video/mp4">
+                      </video>
+                    </td>
+                      <td>          
+                        <video poster="" id="steve" autoplay="" muted="" loop="" playsinline="" height="100%" style="border-radius: 10px; ">
+                          <source src="static/media/videos/task_unseen_eatchipsonthesofa.mov" type="video/mp4">
+                      </video>
+                    </td>
+                    </tr>
+                    <tr>
+                      <th>make toast</th>
+                      <th>put salmon in the fridge</th>
+                      <th>throw away apple</th>
+                    </tr>
+                    <tr>
+                      <td>          
+                        <video poster="" id="steve" autoplay="" muted="" loop="" playsinline="" height="100%" style="border-radius: 10px; ">
+                          <source src="static/media/videos/task_unseen_make toast.mov" type="video/mp4">
+                      </video>
+                    </td>
+                      <td>          
+                        <video poster="" id="steve" autoplay="" muted="" loop="" playsinline="" height="100%" style="border-radius: 10px; ">
+                          <source src="static/media/videos/task_unseen_putsalmoninthefridge.mov" type="video/mp4">
+                      </video>
+                    </td>
+                      <td>          
+                        <video poster="" id="steve" autoplay="" muted="" loop="" playsinline="" height="100%" style="border-radius: 10px; ">
+                          <source src="static/media/videos/task_unseen_throw away apple.mov" type="video/mp4">
+                      </video>
+                    </td>
+                    </tr>
+                    <tr>
+                      <th>turn off light</th>
+                      <th>wash the plate.</th>
+                      <th>watch tv</th>
+                    </tr>
+                    <tr>
+                      <td>          
+                        <video poster="" id="steve" autoplay="" muted="" loop="" playsinline="" height="100%" style="border-radius: 10px; ">
+                          <source src="static/media/videos/task_unseen_turn off light.mov" type="video/mp4">
+                      </video>
+                    </td>
+                      <td>          
+                        <video poster="" id="steve" autoplay="" muted="" loop="" playsinline="" height="100%" style="border-radius: 10px; ">
+                          <source src="static/media/videos/task_unseen_wash the plate.mov" type="video/mp4">
+                      </video>
+                    </td>
+                      <td>          
+                        <video poster="" id="steve" autoplay="" muted="" loop="" playsinline="" height="100%" style="border-radius: 10px; ">
+                          <source src="static/media/videos/task_unseen_watch tv.mov" type="video/mp4">
+                      </video>
+                    </td>
+                    </tr>
+                  </tbody>
+                </table>
+          
+              </div>
+            </div>
+  
+  
+  </section> 
+  

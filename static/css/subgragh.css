@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column; /* Stack the images vertically */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.subfigure {
+    text-align: center;
+}
+
+/* The first image takes up the full row */
+.full-width {
+    width: 100%;
+}
+
+/* The second and third images share the second row equally */
+.half-width {
+    width: 45%; /* Adjust width to fit side by side with some space */
+}
+
+/* img {
+    width: 100%; /* Ensure the image takes up full width of the container */
+    /* height: auto;
+} */ 
+
+.caption {
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+}
